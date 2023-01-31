@@ -64,7 +64,7 @@ output application/json
 					<ee:set-variable resource="dwl/fileHeader.dwl" variableName="fileHeader" />
 				</ee:variables>
 			</ee:transform>
-			<set-variable value="#[vars.fileHeader]" doc:name="Set fileHeader" doc:id="d7afd79d-22bb-4fdc-8349-7b2b62ad98a0" variableName="fileHeader"/>
+			<set-variable value="#[vars.fileHeader]" doc:name="Set fileHeader" doc:id="d7afd79d-22bb-4fdc-8349-7b2b62ad98a0" variableName="fileHeader" mimeType="text/plain"/>
 			<ee:transform doc:name="Append Header" doc:id="d9c313da-0d95-4fd1-bc14-3a472295b58c">
 						<ee:message>
 					<ee:set-payload resource="dwl/appendHeader.dwl" />
