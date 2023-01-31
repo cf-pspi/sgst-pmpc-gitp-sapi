@@ -5,7 +5,7 @@ mule:
 #API Manager config
 api:
   autodiscovery:
-    id: ''
+    id: '18461633'
   flowDirection: 'outbound'
   source: 'Orders-PAPI'
 
@@ -32,7 +32,7 @@ http:
     orgId: '69195e0c-f771-4438-a4b2-58237c4947b6'
     envId: '62eee220-fe29-44e0-b5cf-199884ed311b'
     storeId: 'APP_358a56d7-94c9-4233-b04a-67c23ec7820e__defaultPersistentObjectStore'
-    partitionId: 'ObjectStore_GITP_PMPC'
+    partitionId: 'ObjStore_Outbound_GITP_PMPC'
 
   keystore:
     path: 'keystores/${mule.env}-keystore.jks'
@@ -53,7 +53,7 @@ http:
 #Notification Configuration
 notification:
   email:
-    toaddress: ['sabeena.shaik@sg.panasonic.com','pavan.ramadugula@sg.panasonic.com','umamaheswara.karanam@sg.panasonic.com']
+    toaddress: ['pavan.ramadugula@sg.panasonic.com']
 
 json:
   logger:
