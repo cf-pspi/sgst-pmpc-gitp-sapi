@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="sgst-pmpc-gitp-sapi-test-suite.xml" />
+	<munit:test name="sgst-pmpc-gitp-sapi-test-suite-post:\ar-statements:application\json:sgst-pmpc-gitp-sapi-configTest" doc:id="b626dbe7-3b72-4d67-a11d-5926c0689261" description="Test">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock sgst-pmpc-impl-flow" doc:id="d7918777-3b16-44a2-91c1-07e3965d91e5" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="sgst-pmpc-impl-flow" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to post:\ar-statements:application\json:sgst-pmpc-gitp-sapi-config" doc:id="7aea215d-64c1-4ad9-8506-e1a0024cbdf7" name="post:\ar-statements:application\json:sgst-pmpc-gitp-sapi-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="c9aa060c-f0f6-4ba4-bfb0-7c2500b90ae1" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="sgst-pmpc-impl-flow" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="sgst-pmpc-gitp-sapi-test-suite-post:\fpl:application\json:sgst-pmpc-gitp-sapi-configTest" doc:id="ff48fd2b-0dcd-4bf3-b5e0-6cb7a51a734b" description="Test">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock sgst-pmpc-impl-flow" doc:id="0f5e7b83-b803-4db5-8e5b-e15b35c0c01c" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="sgst-pmpc-impl-flow" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to post:\fpl:application\json:sgst-pmpc-gitp-sapi-config" doc:id="82881e73-e542-4172-b212-a112f5986b99" name="post:\fpl:application\json:sgst-pmpc-gitp-sapi-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="8ef0b89e-c94e-4d77-9cd0-267e5ba0a2f6" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="sgst-pmpc-impl-flow" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="sgst-pmpc-gitp-sapi-test-suite-post:\purchase-orders:application\json:sgst-pmpc-gitp-sapi-configTest" doc:id="d384eadc-6f74-461d-9834-80e0f6be3920" description="Test">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock sgst-pmpc-impl-flow" doc:id="ddf5f47e-4f1e-4afc-a618-12a72cdfadcb" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="sgst-pmpc-impl-flow" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to post:\purchase-orders:application\json:sgst-pmpc-gitp-sapi-config" doc:id="4a82fde0-6775-40cf-ac61-2be3728abf43" name="post:\purchase-orders:application\json:sgst-pmpc-gitp-sapi-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="34ae48e6-3383-49fd-b5be-ddbd74d3a1b8" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="sgst-pmpc-impl-flow" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+		</munit:validation>
+	</munit:test>
+	<munit:test name="sgst-pmpc-gitp-sapi-test-suite-post:\purchase-results:application\json:sgst-pmpc-gitp-sapi-configTest" doc:id="d4a50ab3-1b6b-4e2d-971a-32f6281f3354" description="Test">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock sgst-pmpc-impl-flow" doc:id="32a0fcdb-96c0-4c5e-b84d-3b492b6433aa" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="sgst-pmpc-impl-flow" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to post:\purchase-results:application\json:sgst-pmpc-gitp-sapi-config" doc:id="86b3f99c-ed0c-4562-9ed8-074c818505e6" name="post:\purchase-results:application\json:sgst-pmpc-gitp-sapi-config"/>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:verify-call doc:name="Verify call" doc:id="452b212a-303f-4acd-9e06-97f7365e5a30" processor="flow-ref">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="sgst-pmpc-impl-flow" attributeName="doc:name" />
+				</munit-tools:with-attributes>
+			</munit-tools:verify-call>
+		</munit:validation>
+	</munit:test>
+
+</mule>
