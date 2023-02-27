@@ -23,7 +23,7 @@ http:
   ob:
     tokenURL: 'https://anypoint.mulesoft.com/accounts/oauth2/token'
     client_id: 'ADAM_INTEGRATIONS_1a44a619-4e75-48f8-903d-48864d973cce'
-    client_secret: '![XXjAlnQaeEJUEPLNOC5bzYB6v04gfJgARrl081xIR8ItlA+OfgxHZVW+spC0sq+D]'
+    client_secret: '![qPhlTAU9ilaFpPiwvXybnvwfVDOE/bCBKlj4h6Ul18PB/P0RL9ITKtwo5bHEw3fL]'
     host: 'object-store-ap-southeast-1.anypoint.mulesoft.com'
     port: '443'
     basePath: '/api/v1'
